@@ -26,6 +26,8 @@ Inspired by Google Cultural Institute's ["X Degrees of Separation"](https://arts
 Was it possible to make this path move only forward in time? Or only backwards? To only consider a certain set of objects by type or nationality?
 [The idea had been gnawing at me for some time.](https://twitter.com/matthewdlincoln/status/959253318160744448)
 
+## How?
+
 To find a "visual path" between two artworks, I used the penultimate max pooling layer of the pre-trained VGG 16 convolutional neural network[^vgg] to produce multidimensional embeddings for over 120,000 images of artworks in the [Rijksmuseum collections](https://www.rijksmuseum.nl/).
 Artworks close to each other in this vector space tend to share visual features (although fine-tuning the network that produced these embeddings would go a long way to fostering similarities more familiar to art historians in this domain.[^seguin])
 By drawing an ideal path between two points in this space, we can find real points (i.e. artworks) close to this path, effectively producing a list of images evenly-spaced in visual similarity - at least, the similarity recognized by VGG 16.
@@ -37,4 +39,4 @@ The R package [pathway](https://github.com/mdlincoln/pathway) powers this search
 
 [^vgg]: Karen Simonyan and Andrew Zisserman, “Very Deep Convolutional Networks for Large-Scale Image Recognition,” ArXiv:1409.1556 [Cs], September 4, 2014, <http://arxiv.org/abs/1409.1556>.
 
-While not producing real causal chains of visual influence, this exploration takes the GCI's "X Degrees of Separation" app and deliberately removes some of the magic, more closely binding it to the idea of historical process, and hopefully encouraging us to revisit Kubler's ideas about how to write histories of visual morphologies even in the absence of social context - ideas all the more important in an age where more images are being looked at by machines than by humans.
+Mechanical Kubler does not producing real causal chains of visual influence. What it does do is deliberately remove some of the magic from GCI's "X Degrees of Separation" app, more closely binding it to the idea of historical process. Hopefully this can encourage us to revisit Kubler's ideas about how to write histories of visual morphologies even in the absence of social context - ideas all the more important in an age where more images are being looked at by machines than by humans.
