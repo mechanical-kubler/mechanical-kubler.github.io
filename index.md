@@ -13,7 +13,7 @@ Sometimes the results are uncanny. Other times they are laughably misguided. But
 
 [^kubler]: George Kubler, _The Shape of Time: Remarks on the History of Things_ (New Haven: Yale University Press, 1962).
 
-It produces both animated GIFs that are tweeted under [@MechanicalKub1](https://twitter.com/MechanicalKubl1).
+It produces both animated GIFs that are tweeted under [@MechaKubler](https://twitter.com/MechaKubler).
 This companion site hosts pages for each tweet with links to all the artworks.
 
 <figure><a href="/pathways/88735e8915ee1900340d62ec278018bf.html"><img src="/assets/images/88735e8915ee1900340d62ec278018bf.gif" /></a></figure>
