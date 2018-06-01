@@ -7,5 +7,5 @@ layout: default
 
 {% assign allpaths = site.pathways | sort: 'date' %}
 {% for p in allpaths %}
-- <a href="{{ baseurl }}{{ p.url }}">{{ p.title }}</a>
+- <a href="/{{ baseurl }}/{{ p.url }}">{{ p.title }}</a>
 {% endfor %}
