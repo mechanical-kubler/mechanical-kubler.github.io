@@ -16,7 +16,7 @@
 title: Mechanical Kubler
 email: matthew.d.lincoln@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Collecting different visual pathways through time, using the collection of the Rijksmuseum along with computer vision and nearest-neighbor searching.
+  Collecting different visual pathways through time, using the collection of the Rijksmuseum along with computer vision and nearest-neighbor searching. A site by @mdlincoln.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mechanical-kubler.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: MechanicalKub1
