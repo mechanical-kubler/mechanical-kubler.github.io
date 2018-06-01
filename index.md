@@ -5,7 +5,9 @@
 layout: default
 ---
 
-{% assign allpaths = site.pathways | sort: 'date' %}
+# Pathways found so far
+
+{% assign allpaths = site.pathways | sort: 'date' | reverse %}
 {% for p in allpaths %}
 - <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
 {% endfor %}
