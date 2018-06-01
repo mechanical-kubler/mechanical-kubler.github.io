@@ -9,10 +9,14 @@ _By [Matthew Lincoln](https://matthewlincoln.net)_
 
 Playing on George Kubler's anthropology of visual style, _The Shape of Time_[^kubler], this app finds a path of similar images through the Rijksmuseum collections, at times moving forwards in time, and at times moving backwards.
 
+Sometimes the results are uncanny. Other times they are laughably misguided. But they each offer an alternative pathway into a large art collection bound together by more formal similarities than we usually chart in our textbooks and exhibitions.
+
 [^kubler]: George Kubler, _The Shape of Time: Remarks on the History of Things_ (New Haven: Yale University Press, 1962).
 
 It produces both animated GIFs that are tweeted under [@MechanicalKub1](https://twitter.com/MechanicalKubl1).
 This companion site hosts pages for each tweet with links to all the artworks.
+
+<figure><a href="/pathways/88735e8915ee1900340d62ec278018bf.html"><img src="/assets/images/88735e8915ee1900340d62ec278018bf.gif" /></a></figure>
 
 **[See pathways found so far.](/pathways)**
 
@@ -26,6 +30,8 @@ To find a "visual path" between two artworks, I used the penultimate max pooling
 Artworks close to each other in this vector space tend to share visual features (although fine-tuning the network that produced these embeddings would go a long way to fostering similarities more familiar to art historians in this domain.[^seguin])
 By drawing an ideal path between two points in this space, we can find real points (i.e. artworks) close to this path, effectively producing a list of images evenly-spaced in visual similarity - at least, the similarity recognized by VGG 16.
 The R package [pathway](https://github.com/mdlincoln/pathway) powers this search, and offers some functions for constraining the search to move in one direction - in our case, either forward or backwards through the "time" represented by the creation dates given to these objects by Rijksmuseum curators.
+
+<figure><a href="/pathways/88735e8915ee1900340d62ec278018bf.html"><img src="/assets/images/88735e8915ee1900340d62ec278018bf.png" /></a><figcaption>A representation of the visual fingerprints of ~120k images, the multidimensional space returned by VGG-18 here boiled down to just two principal components, with the start, end, and intermediate images highlighted.</figcaption></figure>
 
 [^seguin]: This avenue is already being explored by Benoit Seguin et al., “Visual Link Retrieval in a Database of Paintings,” in _Computer Vision – ECCV 2016 Workshops_, ed. Gang Hua and Hervé Jégou, vol. 9913 (Cham: Springer International Publishing, 2016), 753–67, <https://doi.org/10.1007/978-3-319-46604-0_52>.
 
